@@ -1,0 +1,73 @@
+\section{Objetivo}
+O objetivo deste projeto de mestrado � desenvolver t�cnicas de controle sub�timo das juntas passivas (n�o atuadas) de um rob� subatuado, incluindo o estudo te�rico do tema, proposi��o de um m�todo de controle e sua verifica��o
+experimental em um manipulador de tr�s graus de liberdade \cite{Nascimento1970}.
+
+O teste \cite{Patagonios2001} e valida��o das t�cnicas de controle propostas foram realizados em um ambiente de simula��o e no manipulador
+experimental, adquirido atrav�s do projeto FAPESP $N^{\circ}$ 98/00649-5, que se encontra em funcionamento no Laborat�rio de Sistemas Inteligentes (LASI) do Departamento de Engenharia El�trica da USP em S�o Carlos. Pode-se citar \cite{Furmento1995}:
+\begin{itemize}
+\item Isso;
+\item Aquilo; e
+\item Aquele outro.
+\end{itemize}
+\section{Motiva��o}
+Manipuladores mec�nicos \cite{Sbornian2002} v�m sendo utilizados h� v�rias d�cadas para a automa��o de tarefas
+repetitivas em ambientes industriais, ambientes estes de f�cil acesso tanto em termos f�sicos quanto em termos de baixo
+risco � sa�de humana. Nos �ltimos anos, verifica-se uma utiliza��o cada vez maior de manipuladores em
+ambientes de dif�cil acesso ou in�spitos, como no interior de usinas nucleares, no fundo dos oceanos e no
+espa�o. A localiza��o dos manipuladores nesta nova gama de aplica��es faz com que sua manuten��o,
+Dp�s uma falha mec�nica ou el�trica, seja custosa e demorada, portanto estes mecanismos requerem sofisticadas
+metodologias de controle tolerante a falhas \cite{ITALUS2004}.
+
+Ap�s a ocorr�ncia de uma falha em um de seus atuadores, o manipulador torna-se um sistema subatuado. Um sistema tamb�m pode se tornar subatuado quando � projetado  dessa maneira, ou quando o operador deliberadamente mant�m um ou mais atuadores dispon�veis inoperantes durante uma tarefa. Reduzindo o n�mero de atuadores sem reduzir o n�mero de graus de liberdade e ajustando-se o sistema de controle adequado, pode-se obter um mecanismo cujo consumo de energia � menor, mas cujas propriedades s�o mantidas \cite{Arystides1994}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{Cap1/cupim}
+\caption{Proibido estacionar cupins. Legenda grande, com o objetivo de demonstrar a indenta��o na lista de figuras.}
+\label{cupim}
+\end{figure}
+
+Controle do manipulador ap�s uma falha � fundamental do ponto de vista de opera��o, principalmente nos casos descritos acima, em que a localiza��o do manipulador impede sua manuten��o de forma f�cil. Recentemente tem havido a combina��o
+de algor�tmos de detec��o e isola��o de falhas com os de controle p�s-falha em um m�todo unificado. Uma extens�o desse trabalho, que v� o problema de controle tolerante a falhas atrav�s de uma perspectiva integrada, foi proposta por
+{marcel4}. Os autores apresentam um ambiente h�brido consistindo de tr�s unidades b�sicas que garantem a complei��o de tarefas na presen�a de qualquer n�mero de juntas falhas (Figura \ref{cupim}). A primeira unidade � um esquema de detec��o
+e isola��o de falhas que continuamente monitora o manipulador para detectar e identificar poss�veis falhas nas juntas. A segunda unidade � respons�vel pela reconfigura��o do controle. A terceira unidade � composta de algor�tmos de
+controle apropriados para cada tipo de configura��o do rob�, baseado na informa��o da unidade de reconfigura��o \cite{COFFEE2000}.
+
+No presente trabalho nos concentramos na unidade de algor�tmo de controle, e mais especificamente no problema de controle da posi��o  angular de uma junta falha para qualquer posi��o desejada de uma maneira sub�tima, quando dispomos
+de redund�ncia de atua��o para a realiza��o dessa tarefa. O termo sub�timo se deve ao fato de que n�o h� garantias de otimalidade em vista das n�o-linearidades inerentes ao sistema e de outros fatores que ser�o abordados nos cap�tulos posteriores. Ao longo do texto, para simplifica��o, usaremos tanto o termo sub�timo como �timo para nos referirmos � metodologia utilizada. \cite{ALMEIDAJUNIOR2011}
+
+Segundo, o crit�rio de otimiza��o utilizado ser� o acoplamento entre as juntas do
+manipulador e neste caso, temos um sistema redundante quando ocorre falha de uma das juntas do manipulador de tr�s juntas, e seu posicionamento � controlado pelas duas restantes. Nossa solu��o para o problema � baseada na formula��o
+de redund�ncia local, extensivamente estudada no contexto de cinem�tica inversa ({nakamura}). A principal contribui��o deste trabalho � a extens�o deste m�todo usando as equa��es din�micas de manipuladores subatuados e a utiliza��o do �ndice de acoplamento como um crit�rio para a minimiza��o do torque e da energia gasta pelo sistema durante o controle das juntas falhas. \cite{dosdesmonte}; \cite{freire2012ensino}; \cite{barsottiuso}; \cite{de2012simulaccoes}; \cite{grabowski2006ensino}; \cite{ramos2008concepccao}; \cite{de2010simuladores}; \cite{santosuso}; \cite{mendes2009uso}.
+
+	
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1\textwidth]{Cap1/cupimconcreto}
+\caption{Exemplo real de cupim frente ao seu dilema.}
+\label{FDII}
+\end{figure}
+
+\section{Organiza��o do trabalho}
+\subsection{Sub-organiza��o}
+O cap�tulo 1 cont�m a introdu��o do trabalho, onde s�o expostos o objetivo, a motiva��o do mesmo, a descri��o do sistema e a formula��o do problema com a nomenclatura utilizada; al�m de uma revis�o bibliogr�fica da literatura relacionada ao tema do trabalho.
+
+\subsubsection{SubSub-organiza��o}
+
+No cap�tulo 2 apresentamos a modelagem din�mica de um manipulador subatuado e o conceito de �ndice de acoplamento para medir o acoplamento din�mico entre as juntas ativas e passivas. Este �ndice � utilizado para a an�lise e projeto de uma metodologia de controle sub�timo do manipulador.
+
+\subsubsection{Outra subsub-organizacao}
+
+O cap�tulo 3 apresenta o controle sub�timo de manipuladores atrav�s de redund�ncia de atua��o. Descreve-se a t�cnica de controle ponto a ponto de manipuladores subatuados. A seguir mostramos  a lineariza��o destes por realimenta��o, cujo efeito � linearizar e desacoplar o sistema n�o linear. Finalmente � proposta uma sequ�ncia de controle sub�timo local das juntas passivas visando a minimiza��o de certos crit�rios como torque, velocidade e em particular a energia consumida pelo sistema. Este � de fato o tema principal deste mestrado.
+
+� tamb�m apresentado no cap�tulo 4 um resumo do projeto de controladores  $H_{2}$ e $H_{\infty}$, cuja principal vantagem � a robustez na presen�a de incertezas param�tricas e dist�rbios externos.
+
+O cap�tulo 5 mostra as caracter�sticas e a opera��o do rob� e do ambiente de simula��o utilizados nos testes e experimenta��o da metodologia apresentada.
+
+Os procedimentos da metodologia e os resultados obtidos para algumas configura��es e diferentes controladores encontram-se no cap�tulo 6.
+
+No cap�tulo 7 s�o apresentadas as conclus�es do trabalho.
+
+Quatro ap�ndices fazem parte do trabalho. O ap�ndice A apresenta alguns t�picos de �lgebra linear que s�o a base do m�todo proposto. No ap�ndice B s�o mostradas as equa��es da matriz de in�rcia e do vetor de torques n�o-inerciais
+utilizados na modelagem din�mica do manipulador. No ap�ndice C temos as express�es literais dessas equa��es feitas no software MAPLE e no ap�ndice D alguns programas feitos no software MATLAB utilizados no projeto \cite{Furmento1995}\cite{Morgado2003}.
+

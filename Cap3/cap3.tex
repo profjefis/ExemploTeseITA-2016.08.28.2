@@ -1,0 +1,17 @@
+\section{Controle combinado}
+Conforme vimos na se��o \ref{ectq3} podemos controlar um sistema nao linear como  atrav�s da t�cnica do torque computado, usando um controlador PD dado por:
+\begin{equation} \label{ectq3}
+\tau'=\ddot{q}_d+K_v(\dot{q}_d-\dot{q})+K_p(q_d-q) \; ,
+\end{equation}
+sendo $q_{d}$, $\dot{q}_{d}$ e $\ddot{q}_{d}$ a posi��o desejada, a velocidade desejada e a acelera��o desejada; $K_p$
+e $K_v$ s�o matrizes diagonais $n \times n$, sendo que cada elemento da diagonal � um ganho positivo e escalar.
+
+Aqui $M_{est}$ e $b_{est}$ s�o modelos estimados da matriz de in�rcia, $M$, e do vetor de torques n�o inerciais, $b$, do rob� real,  respectivamente. A equa��o de malha fechada do sistema �:
+\begin{equation} \label{ectq4}
+\ddot{e}+K_v\dot{e}+K_pe=M_{est}^{-1}[(M-M_{est})\ddot{q}+(b-b_{est})] \; .
+\end{equation}
+
+Em um manipulador real, podem existir dist�rbios externos tais como atrito, varia��o de torque dos atuadores, e perturba��es em virtude  das cargas no rob�. Se a soma destes dist�rbios for definida como $d_{ext}$ e adicionada � (\ref{ectq4}), teremos
+\begin{equation} \label{ectq5}
+\ddot{e}+K_v\dot{e}+K_pe=M_{est}^{-1}[(M-M_{est})\ddot{q}+(b-b_{est})+d_{ext}] \; .
+\end{equation}

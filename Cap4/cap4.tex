@@ -1,0 +1,13 @@
+%\section{Conclus�o}
+
+Neste trabalho realizou-se o projeto de uma metodologia de controle sub�timo redundante da junta passiva de um manipulador com tr�s graus de liberdade instantaneamente. Para este prop�sito usou-se nas formula��es o vetor gradiente de uma fun��o escalar que estima o acoplamento entre a junta passiva e as ativas desse manipulador. Aqui a redund�ncia
+foi usada da melhor maneira poss�vel sem focalizar o efeito global. Portanto, este m�todo deve ser denominado de \emph{controle �timo local por redund�ncia}. A principal vantagem dessa formula��o � a computa��o em tempo real, que �
+necess�ria para o controle do manipulador experimental. Al�m disso esse m�todo pode ser usado com diferentes tipos de controladores, uma vez que as altera��es s�o feitas nas equa��es din�micas do manipulador.
+
+A consequ�ncia direta observada nessa formula��o � a redu��o dos torques na fase de controle da junta passiva, e consequente redu��o da energia el�trica gasta. Isso ocorre devido ao fato de que ao longo da trajet�ria do manipulador
+o �ndice de acoplamento de torque tende a ser maximizado, e portanto, menor � o torque necess�rio nos atuadores para se conseguir o posicionamento da junta passiva do manipulador.
+
+Outros resultados indiretos obtidos s�o: um movimento mais uniforme e suave do manipulador e um tempo de acomoda��o menor tanto no posicionamento da junta passiva quanto das ativas, conforme podemos obervar nos gr�ficos de desempenho dos resultados apresentados. Isso ocorre porque a maximiza��o do acoplamento entre as juntas facilita o controle. Assim
+ocorrem menos picos de torque, e como as juntas ativas tem ``menos trabalho'' para posicionar a passiva estas se movem menos na dire�ao contr�ria ao movimento daquelas, diminuindo assim as velocidades alcan�adas e os tempos de posicionamento.
+
+Uma extens�o deste trabalho pode ser a implementa��o de um \emph{controle �timo global por redund�ncia} da junta passiva do manipulador. Para isto pode-se fazer o planejamento \emph{off-line} da trajet�ria das juntas de modo a minimizar a energia consumida. Alguns estudos foram feitos nesse sentido, usando o Princ�pio M�nimo de Pontryagin, mas sem resultados satisfat�rios at� o momento.

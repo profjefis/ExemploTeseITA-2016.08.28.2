@@ -1,0 +1,322 @@
+<html><head><style type="text/css">pre { margin: 1px }
+			.fmt0 {  } /* normal */
+			.fmt1 {  } /* background */
+			.fmt2 { background-color: #ffcabf; } /* line:error */
+			.fmt3 { background-color: #fffbbf; } /* line:warning */
+			.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+			.fmt5 {  } /* line:bookmark */
+			.fmt6 {  } /* line:bookmark0 */
+			.fmt7 {  } /* line:bookmark1 */
+			.fmt8 {  } /* line:bookmark2 */
+			.fmt9 {  } /* line:bookmark3 */
+			.fmt10 {  } /* line:bookmark4 */
+			.fmt11 {  } /* line:bookmark5 */
+			.fmt12 {  } /* line:bookmark6 */
+			.fmt13 {  } /* line:bookmark7 */
+			.fmt14 {  } /* line:bookmark8 */
+			.fmt15 {  } /* line:bookmark9 */
+			.fmt16 { color: #555580; } /* magicComment */
+			.fmt17 { background-color: #a8cf83; } /* commentTodo */
+			.fmt18 { color: #808080; } /* comment */
+			.fmt19 { color: #800000; } /* keyword */
+			.fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
+			.fmt21 { color: #808000; } /* math-keyword */
+			.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+			.fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
+			.fmt24 { color: #008080; } /* verbatim */
+			.fmt25 { color: #800000; } /* sweave-block */
+			.fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
+			.fmt27 { color: #800000; } /* pweave-block */
+			.fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
+			.fmt29 { color: #804000; } /* picture */
+			.fmt30 { color: #c06000; } /* picture-keyword */
+			.fmt31 { font-weight: 700;color: #c00000;background-color: #ffff7f; } /* braceMatch */
+			.fmt32 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+			.fmt33 { color: #000000;background-color: #ffff40; } /* search */
+			.fmt34 { color: #008000; } /* numbers */
+			.fmt35 { color: #509600; } /* math-delimiter */
+			.fmt36 { color: #ff0000; } /* text */
+			.fmt37 { color: #ff0088; } /* escapeseq */
+			.fmt38 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+			.fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+			.fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+			.fmt41 { text-decoration: line-through; } /* badWord */
+			.fmt42 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+			.fmt43 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+			.fmt44 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+			.fmt45 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+			.fmt46 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+			.fmt47 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+			.fmt48 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+			.fmt49 { color: #000080; } /* environment */
+			.fmt50 { color: #008000; } /* referencePresent */
+			.fmt51 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+			.fmt52 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+			.fmt53 { color: #008000; } /* citationPresent */
+			.fmt54 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+			.fmt55 { color: #008000; } /* packagePresent */
+			.fmt56 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+			.fmt57 { font-weight: 700;color: #000000; } /* structure */
+			.fmt58 { background-color: #eeeeff; } /* current */
+			.fmt59 { background-color: #aaffff; } /* selection */
+			.fmt60 { background-color: #ffaaaa; } /* replacement */
+			.fmt61 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+			.fmt62 { background-color: #aaffaa; } /* diffAdd */
+			.fmt63 { background-color: #ffff50; } /* diffReplace */
+			.fmt64 { background-color: #ddffcc; } /* previewSelection */
+			.fmt65 { font-weight: 700;color: #0095ff; } /* txs-test */
+			.fmt66 { font-weight: 700; } /* txs-test-summary */
+			.fmt67 { color: #008000; } /* txs-test-pass */
+			.fmt68 { color: #c00000; } /* txs-test-fail */
+			.fmt69 { color: #ea8800; } /* txs-test-warn */
+			.fmt70 { color: #808000; } /* txs-test-qdebug */
+			.fmt71 { color: #ffa500; } /* dtx:guard */
+			.fmt72 { font-weight: 700;color: #006400; } /* dtx:macro */
+			.fmt73 { color: #008080; } /* dtx:verbatim */
+			.fmt74 { color: #cc8100; } /* dtx:specialchar */
+			.fmt75 { font-weight: 700;color: #10c010; } /* dtx:commands */
+			.fmt76 { color: #b200ff; } /* lua:keyword */
+			.fmt77 { color: #808080; } /* lua:comment */
+			.fmt78 { color: #804000; } /* asymptote:block */
+			.fmt79 { color: #800080; } /* asymptote:keyword */
+			.fmt80 { color: #808000; } /* asymptote:type */
+			.fmt81 { color: #008000; } /* asymptote:numbers */
+			.fmt82 { color: #000080; } /* asymptote:string */
+			.fmt83 { color: #808080; } /* asymptote:comment */
+			.fmt84 { color: #808080; } /* qtscript:comment */
+			.fmt85 { color: #008000; } /* qtscript:string */
+			.fmt86 { color: #000080; } /* qtscript:number */
+			.fmt87 { color: #808000; } /* qtscript:keyword */
+			.fmt88 { color: #800000; } /* qtscript:txs-variable */
+			.fmt89 { font-style: italic; } /* qtscript:txs-function */
+			.fmt90 { background-color: #ffff7f; } /* preedit */
+		</style></head><body><pre><span class="fmt18">%%%</span><span class="fmt18"> </span><span class="fmt18">Exemplo</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">utilização</span><span class="fmt18"> </span><span class="fmt18">da</span><span class="fmt18"> </span><span class="fmt18">classe</span><span class="fmt18"> </span><span class="fmt18">ITA</span> </pre>
+		<pre><span class="fmt18">%%%</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">   </span><span class="fmt18">por</span><span class="fmt18">        </span><span class="fmt18">Fábio</span><span class="fmt18"> </span><span class="fmt18">Fagundes</span><span class="fmt18"> </span><span class="fmt18">Silveira</span><span class="fmt18">   </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">ffs</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">ita</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">br</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">              </span><span class="fmt18">Benedito</span><span class="fmt18"> </span><span class="fmt18">C.</span><span class="fmt18"> </span><span class="fmt18">O.</span><span class="fmt18"> </span><span class="fmt18">Maciel</span><span class="fmt18">     </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">bcmaciel</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">ita</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">br</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">              </span><span class="fmt18">Giovani</span><span class="fmt18"> </span><span class="fmt18">Volnei</span><span class="fmt18"> </span><span class="fmt18">Meinertz</span><span class="fmt18">   </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">giovani</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">ita</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">br</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">    	         </span><span class="fmt18">Hudson</span><span class="fmt18"> </span><span class="fmt18">Alberto</span><span class="fmt18"> </span><span class="fmt18">Bode</span><span class="fmt18">       </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">bode</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">ita</span><span class="fmt18"> </span><span class="fmt18">[dot]br</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">    	         </span><span class="fmt18">P.</span><span class="fmt18"> </span><span class="fmt18">I.</span><span class="fmt18"> </span><span class="fmt18">Braga</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Queiroz</span><span class="fmt18">    </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">pi</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">ita</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">br</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">    	         </span><span class="fmt18">Jorge</span><span class="fmt18"> </span><span class="fmt18">A.</span><span class="fmt18"> </span><span class="fmt18">B.</span><span class="fmt18"> </span><span class="fmt18">Gripp</span><span class="fmt18">         </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">gripp</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">ita</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">br</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">    	         </span><span class="fmt18">Juliano</span><span class="fmt18"> </span><span class="fmt18">Monte-Mor</span><span class="fmt18">         </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">jamontemor</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">yahoo</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">com</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">br</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">    	         </span><span class="fmt18">Tarcisio</span><span class="fmt18"> </span><span class="fmt18">A.</span><span class="fmt18"> </span><span class="fmt18">B.</span><span class="fmt18"> </span><span class="fmt18">Gripp</span><span class="fmt18">      </span><span class="fmt18">-</span><span class="fmt18">  </span><span class="fmt18">tarcisio.gripp</span><span class="fmt18"> </span><span class="fmt18">[at]</span><span class="fmt18"> </span><span class="fmt18">gmail</span><span class="fmt18"> </span><span class="fmt18">[dot]</span><span class="fmt18"> </span><span class="fmt18">com</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">    	         </span> </pre>
+		<pre><span class="fmt18">%%%</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">  </span><span class="fmt18">IMPORTANTE:</span><span class="fmt18"> </span><span class="fmt18">O</span><span class="fmt18"> </span><span class="fmt18">texto</span><span class="fmt18"> </span><span class="fmt18">contido</span><span class="fmt18"> </span><span class="fmt18">neste</span><span class="fmt18"> </span><span class="fmt18">exemplo</span><span class="fmt18"> </span><span class="fmt18">nao</span><span class="fmt18"> </span><span class="fmt18">significa</span><span class="fmt18"> </span><span class="fmt18">absolutamente</span><span class="fmt18"> </span><span class="fmt18">nada.</span><span class="fmt18">  </span><span class="fmt18">:-)</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">              </span><span class="fmt18">O</span><span class="fmt18"> </span><span class="fmt18">intuito</span><span class="fmt18"> </span><span class="fmt18">aqui</span><span class="fmt18"> </span><span class="fmt18">eh</span><span class="fmt18"> </span><span class="fmt18">demonstrar</span><span class="fmt18"> </span><span class="fmt18">os</span><span class="fmt18"> </span><span class="fmt18">comandos</span><span class="fmt18"> </span><span class="fmt18">criados</span><span class="fmt18"> </span><span class="fmt18">na</span><span class="fmt18"> </span><span class="fmt18">classe</span><span class="fmt18"> </span><span class="fmt18">e</span><span class="fmt18"> </span><span class="fmt18">suas</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">              </span><span class="fmt18">respectivas</span><span class="fmt18"> </span><span class="fmt18">utilizacoes.</span> </pre>
+		<pre><span class="fmt18">%%%</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">  </span><span class="fmt18">Tese.tex</span><span class="fmt18">  </span><span class="fmt18">2016-08-25</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">  </span><span class="fmt18">$HeadURL:</span><span class="fmt18"> </span><span class="fmt18">http://www.apgita.org.br/apgita/teses-e-latex.php</span><span class="fmt18"> </span><span class="fmt18">$</span> </pre>
+		<pre><span class="fmt18">%%%</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18"> </span><span class="fmt18">ITALUS</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18"> </span><span class="fmt18">Instituto</span><span class="fmt18"> </span><span class="fmt18">Tecnológico</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Aeronáutica</span><span class="fmt18"> </span><span class="fmt18">---</span><span class="fmt18"> </span><span class="fmt18">ITA,</span><span class="fmt18"> </span><span class="fmt18">Sao</span><span class="fmt18"> </span><span class="fmt18">Jose</span><span class="fmt18"> </span><span class="fmt18">dos</span><span class="fmt18"> </span><span class="fmt18">Campos,</span><span class="fmt18"> </span><span class="fmt18">Brasil</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18">                   </span><span class="fmt18">http://groups.yahoo.com/group/italus/</span> </pre>
+		<pre><span class="fmt18">%%%</span><span class="fmt18"> </span><span class="fmt18">Discussion</span><span class="fmt18"> </span><span class="fmt18">list:</span><span class="fmt18"> </span><span class="fmt18">italus</span><span class="fmt18"> </span><span class="fmt18">{at}</span><span class="fmt18"> </span><span class="fmt18">yahoogroups.com</span> </pre>
+		<pre><span class="fmt18">%%%</span> </pre>
+		<pre><span class="fmt18">%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">alterar</span><span class="fmt18"> </span><span class="fmt18">o</span><span class="fmt18"> </span><span class="fmt18">TIPO</span><span class="fmt18"> </span><span class="fmt18">DE</span><span class="fmt18"> </span><span class="fmt18">DOCUMENTO,</span><span class="fmt18"> </span><span class="fmt18">preencher</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">linha</span><span class="fmt18"> </span><span class="fmt18">abaixo</span><span class="fmt18"> </span><span class="fmt18">\documentclass[?]{?}</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   </span><span class="fmt18">\documentclass[tg]{ita}</span><span class="fmt18">			</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Trabalho</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Graduacao</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   </span><span class="fmt18">\documentclass[tgfem]{ita}</span><span class="fmt18">	</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">Engenheiras</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   								</span><span class="fmt18">msc</span><span class="fmt18">     		</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Dissertacao</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Mestrado</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   								</span><span class="fmt18">mscfem</span><span class="fmt18">   		</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">Mestras</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   								</span><span class="fmt18">dsc</span><span class="fmt18">      		</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Tese</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Doutorado</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   								</span><span class="fmt18">dscfem</span><span class="fmt18">   		</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">Doutoras</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   								</span><span class="fmt18">quali</span><span class="fmt18">    		</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Exame</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Qualificacao</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   								</span><span class="fmt18">qualifem</span><span class="fmt18"> 		</span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">Exame</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Qualificacao</span><span class="fmt18"> </span><span class="fmt18">para</span><span class="fmt18"> </span><span class="fmt18">Doutoras</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">'Draft</span><span class="fmt18"> </span><span class="fmt18">Version'/'Versao</span><span class="fmt18"> </span><span class="fmt18">Preliminar'</span><span class="fmt18"> </span><span class="fmt18">com</span><span class="fmt18"> </span><span class="fmt18">data</span><span class="fmt18"> </span><span class="fmt18">no</span><span class="fmt18"> </span><span class="fmt18">rodape,</span><span class="fmt18"> </span><span class="fmt18">adicionar</span><span class="fmt18"> </span><span class="fmt18">'dv':</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   </span><span class="fmt18">\documentclass[dsc,</span><span class="fmt18"> </span><span class="fmt18">dv]{ita}</span><span class="fmt18"> </span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">trabalhos</span><span class="fmt18"> </span><span class="fmt18">em</span><span class="fmt18"> </span><span class="fmt18">Inglês,</span><span class="fmt18"> </span><span class="fmt18">adicionar</span><span class="fmt18"> </span><span class="fmt18">'eng':</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">   </span><span class="fmt18">\documentclass[dsc,</span><span class="fmt18"> </span><span class="fmt18">eng]{ita}</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">		</span><span class="fmt18">\documentclass[dsc,</span><span class="fmt18"> </span><span class="fmt18">eng,</span><span class="fmt18"> </span><span class="fmt18">dv]{ita}</span> </pre>
+		<pre><span class="fmt18">%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\documentclass</span>[msc, dv]{<span class="fmt56">ita</span>}    <span class="fmt17">%</span><span class="fmt17"> </span><span class="fmt17">ITA.cls</span><span class="fmt17"> </span><span class="fmt17">based</span><span class="fmt17"> </span><span class="fmt17">on</span><span class="fmt17"> </span><span class="fmt17">standard</span><span class="fmt17"> </span><span class="fmt17">book.cls</span><span class="fmt17"> </span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Quando</span><span class="fmt18"> </span><span class="fmt18">alterar</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">classe,</span><span class="fmt18"> </span><span class="fmt18">por</span><span class="fmt18"> </span><span class="fmt18">exemplo</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">[msc]</span><span class="fmt18"> </span><span class="fmt18">para</span><span class="fmt18"> </span><span class="fmt18">[msc,</span><span class="fmt18"> </span><span class="fmt18">eng])</span><span class="fmt18"> </span><span class="fmt18">rode</span><span class="fmt18"> </span><span class="fmt18">mais</span><span class="fmt18"> </span><span class="fmt18">uma</span><span class="fmt18"> </span><span class="fmt18">vez</span><span class="fmt18"> </span><span class="fmt18">o</span><span class="fmt18"> </span><span class="fmt18">botão</span><span class="fmt18"> </span><span class="fmt18">BUILD</span><span class="fmt18"> </span><span class="fmt18">OUTPUT</span><span class="fmt18"> </span><span class="fmt18">caso</span><span class="fmt18"> </span><span class="fmt18">haja</span><span class="fmt18"> </span><span class="fmt18">erro</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">ae</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">graphicx</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">epsfig</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">amsmath</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">amssymb</span>}  </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">subfig</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">multirow</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">float</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt55">setspace</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[alf,bibjustif]{<span class="fmt55">abntex2cite</span>} </pre>
+		<pre><span class="fmt18">%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Espaçamento</span><span class="fmt18"> </span><span class="fmt18">padrão</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">todo</span><span class="fmt18"> </span><span class="fmt18">o</span><span class="fmt18"> </span><span class="fmt18">documento</span> </pre>
+		<pre><span class="fmt18">%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span> </pre>
+		<pre><span class="fmt19">\onehalfspacing</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%singlespacing</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">um</span><span class="fmt18"> </span><span class="fmt18">espaçamento</span><span class="fmt18"> </span><span class="fmt18">simples</span> </pre>
+		<pre><span class="fmt18">%onehalfspacing</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">um</span><span class="fmt18"> </span><span class="fmt18">espaçamento</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">1,5</span> </pre>
+		<pre><span class="fmt18">%doublespacing</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">um</span><span class="fmt18"> </span><span class="fmt18">espaçamento</span><span class="fmt18"> </span><span class="fmt18">duplo</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Identificacoes</span><span class="fmt18"> </span><span class="fmt18">(se</span><span class="fmt18"> </span><span class="fmt18">o</span><span class="fmt18"> </span><span class="fmt18">trabalho</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">em</span><span class="fmt18"> </span><span class="fmt18">inglês,</span><span class="fmt18"> </span><span class="fmt18">insira</span><span class="fmt18"> </span><span class="fmt18">os</span><span class="fmt18"> </span><span class="fmt18">dados</span><span class="fmt18"> </span><span class="fmt18">em</span><span class="fmt18"> </span><span class="fmt18">inglês)</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Para</span><span class="fmt18"> </span><span class="fmt18">entradas</span><span class="fmt18"> </span><span class="fmt18">abreviadas</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Professora</span><span class="fmt18"> </span><span class="fmt18">(Profa.)</span><span class="fmt18"> </span><span class="fmt18">em</span><span class="fmt18"> </span><span class="fmt18">português</span><span class="fmt18"> </span><span class="fmt18">escreva:</span><span class="fmt18"> </span><span class="fmt18">Prof$^\textnormal{a}$.</span> </pre>
+		<pre><span class="fmt18">%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span> </pre>
+		<pre><span class="fmt19">\course</span>{Física} <span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Programa</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">PG</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">Curso</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Graduação</span> </pre>
+		<pre><span class="fmt19">\area</span>{Ensino de Física} <span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Área</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">concentração</span><span class="fmt18"> </span><span class="fmt18">na</span><span class="fmt18"> </span><span class="fmt18">PG</span><span class="fmt18"> </span><span class="fmt18">(Não</span><span class="fmt18"> </span><span class="fmt18">utilizado</span><span class="fmt18"> </span><span class="fmt18">no</span><span class="fmt18"> </span><span class="fmt18">caso</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">TG)</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Autor</span><span class="fmt18"> </span><span class="fmt18">do</span><span class="fmt18"> </span><span class="fmt18">trabalho:</span><span class="fmt18"> </span><span class="fmt18">Nome</span><span class="fmt18"> </span><span class="fmt18">Sobrenome</span> </pre>
+		<pre><span class="fmt19">\authorgender</span>{masc}                     <span class="fmt18">%sexo:</span><span class="fmt18"> </span><span class="fmt18">masc</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">fem</span> </pre>
+		<pre><span class="fmt19">\author</span>{Jefferson Rodrigues de}{Oliveira} </pre>
+		<pre><span class="fmt19">\itaauthoraddress</span>{<span class="fmt38">UnB</span> - Campus <span class="fmt38">Darcy</span> Ribeiro - Asa Norte}{720910-900}{Brasília - DF - Brasil} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Titulo</span><span class="fmt18"> </span><span class="fmt18">da</span><span class="fmt18"> </span><span class="fmt18">Tese/Dissertação</span> </pre>
+		<pre><span class="fmt19">\title</span>{Games digitais: uma abordagem de Física de Partículas Elementares no Ensino Médio} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Orientador</span> </pre>
+		<pre><span class="fmt19">\advisorgender</span>{fem}                    <span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">masc</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">fem</span> </pre>
+		<pre><span class="fmt19">\advisor</span>{Prof.~Dr.}{Vanessa Carvalho de Andrade}{UnB} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Coorientador</span><span class="fmt18"> </span><span class="fmt18">(Caso</span><span class="fmt18"> </span><span class="fmt18">não</span><span class="fmt18"> </span><span class="fmt18">haja</span><span class="fmt18"> </span><span class="fmt18">coorientador,</span><span class="fmt18"> </span><span class="fmt18">colocar</span><span class="fmt18"> </span><span class="fmt18">ambas</span><span class="fmt18"> </span><span class="fmt18">as</span><span class="fmt18"> </span><span class="fmt18">variáveis</span><span class="fmt18"> </span><span class="fmt18">\coadvisorgender</span><span class="fmt18"> </span><span class="fmt18">e</span><span class="fmt18"> </span><span class="fmt18">\coadvisor</span><span class="fmt18"> </span><span class="fmt18">comentadas,</span><span class="fmt18"> </span><span class="fmt18">com</span><span class="fmt18"> </span><span class="fmt18">um</span><span class="fmt18"> </span><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">na</span><span class="fmt18"> </span><span class="fmt18">frente)</span> </pre>
+		<pre><span class="fmt18">%\coadvisorgender{fem}</span><span class="fmt18">									</span><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">masc</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">fem</span> </pre>
+		<pre><span class="fmt18">%\coadvisor{Prof$^\textnormal{a}$.~Dr$^\textnormal{a}$.}{Doralice</span><span class="fmt18"> </span><span class="fmt18">Serra}{OVNI}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Pró-reitor</span><span class="fmt18"> </span><span class="fmt18">da</span><span class="fmt18"> </span><span class="fmt18">Pós-graduação</span> </pre>
+		<pre><span class="fmt18">%\bossgender{masc}</span><span class="fmt18">												</span><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">masc</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">fem</span> </pre>
+		<pre><span class="fmt18">%\boss{Prof.~Dr.}{John</span><span class="fmt18"> </span><span class="fmt18">von</span><span class="fmt18"> </span><span class="fmt18">Neumann}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%Coordenador</span><span class="fmt18"> </span><span class="fmt18">do</span><span class="fmt18"> </span><span class="fmt18">curso</span><span class="fmt18"> </span><span class="fmt18">no</span><span class="fmt18"> </span><span class="fmt18">caso</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">TG</span> </pre>
+		<pre><span class="fmt18">%\bosscoursegender{masc}</span><span class="fmt18">									</span><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">masc</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">fem</span> </pre>
+		<pre><span class="fmt18">%\bosscourse{Prof.~Dr.}{John</span><span class="fmt18"> </span><span class="fmt18">Walker}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Palavras-Chaves</span><span class="fmt18"> </span><span class="fmt18">informadas</span><span class="fmt18"> </span><span class="fmt18">pela</span><span class="fmt18"> </span><span class="fmt18">Biblioteca</span><span class="fmt18"> </span><span class="fmt18">-></span><span class="fmt18"> </span><span class="fmt18">utilizada</span><span class="fmt18"> </span><span class="fmt18">na</span><span class="fmt18"> </span><span class="fmt18">CIP</span> </pre>
+		<pre><span class="fmt19">\kwcip</span>{Cupim} </pre>
+		<pre><span class="fmt19">\kwcip</span>{Dilema} </pre>
+		<pre><span class="fmt19">\kwcip</span>{Construção} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">membros</span><span class="fmt18"> </span><span class="fmt18">da</span><span class="fmt18"> </span><span class="fmt18">banca</span><span class="fmt18"> </span><span class="fmt18">examinadora</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\examiner</span>{<span class="fmt19"><span class="fmt47">\itaadvisortitlebabel</span></span>}{<span class="fmt19">\itaadvisorname</span>}{Presidente}{IF-UNB} </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Orientador(a)</span> </pre>
+		<pre><span class="fmt19">\examiner</span>{Prof. Dr.}{Mickey Mouse}{Membro interno vinculado ao programa}{IF-UNB} </pre>
+		<pre><span class="fmt19">\examiner</span>{Prof. Dr.}{Richard Stallman}{Membro interno vinculado ao programa}{IF-UNB} </pre>
+		<pre><span class="fmt19">\examiner</span>{Prof. Dr.}{Donald Duck}{Membro interno vinculado ao programa}{IF-UNB} </pre>
+		<pre><span class="fmt18">%\examiner{Prof.</span><span class="fmt18"> </span><span class="fmt18">Dr.}{Mickey</span><span class="fmt18"> </span><span class="fmt18">Mouse}{}{DISNEY}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Data</span><span class="fmt18"> </span><span class="fmt18">da</span><span class="fmt18"> </span><span class="fmt18">defesa</span><span class="fmt18"> </span><span class="fmt18">(mês</span><span class="fmt18"> </span><span class="fmt18">em</span><span class="fmt18"> </span><span class="fmt18">maiúsculo,</span><span class="fmt18"> </span><span class="fmt18">se</span><span class="fmt18"> </span><span class="fmt18">trabalho</span><span class="fmt18"> </span><span class="fmt18">em</span><span class="fmt18"> </span><span class="fmt18">inglês,</span><span class="fmt18"> </span><span class="fmt18">e</span><span class="fmt18"> </span><span class="fmt18">minúsculo</span><span class="fmt18"> </span><span class="fmt18">se</span><span class="fmt18"> </span><span class="fmt18">trabalho</span><span class="fmt18"> </span><span class="fmt18">em</span><span class="fmt18"> </span><span class="fmt18">português)</span><span class="fmt18"> </span> </pre>
+		<pre><span class="fmt19">\date</span>{10}{01}{2017} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Número</span><span class="fmt18"> </span><span class="fmt18">CDU</span><span class="fmt18"> </span><span class="fmt18">-</span><span class="fmt18"> </span><span class="fmt18">(somente</span><span class="fmt18"> </span><span class="fmt18">para</span><span class="fmt18"> </span><span class="fmt18">TG)</span> </pre>
+		<pre><span class="fmt19">\cdu</span>{621.38} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Glossario</span> </pre>
+		<pre><span class="fmt19">\makeglossary</span> </pre>
+		<pre><span class="fmt19"><span class="fmt47">\frontmatter</span></span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Folha</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Rosto</span><span class="fmt18"> </span><span class="fmt18">e</span><span class="fmt18"> </span><span class="fmt18">Capa</span><span class="fmt18"> </span><span class="fmt18">para</span><span class="fmt18"> </span><span class="fmt18">o</span><span class="fmt18"> </span><span class="fmt18">caso</span><span class="fmt18"> </span><span class="fmt18">do</span><span class="fmt18"> </span><span class="fmt18">TG</span> </pre>
+		<pre><span class="fmt19">\maketitle</span> </pre>
+		<pre> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Dedicatoria:</span><span class="fmt18"> </span><span class="fmt18">Nao</span><span class="fmt18"> </span><span class="fmt18">esqueca</span><span class="fmt18"> </span><span class="fmt18">essa</span><span class="fmt18"> </span><span class="fmt18">secao</span><span class="fmt18">  </span><span class="fmt18">...</span><span class="fmt18"> </span><span class="fmt18">:-)</span> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itadedication</span></span><span class="fmt20">}</span> </pre>
+		<pre>Aos amigos da Graduação e Pós-Graduação do ITA por motivarem tanto a criação deste <span class="fmt38">template</span> pelo Fábio Fagundes Silveira quanto por motivarem a mim e outras pessoas a atualizarem e aprimorarem este excelente trabalho. </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itadedication</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Agradecimentos</span> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itathanks</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt19">\input</span>{Cap0/agradecimentos} </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itathanks</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Epígrafe</span> </pre>
+		<pre><span class="fmt19">\thispagestyle</span>{empty} </pre>
+		<pre><span class="fmt19"><span class="fmt47">\ifhyperref\pdfbookmark</span></span>[0]{<span class="fmt19"><span class="fmt47">\nameepigraphe</span></span>}{epigrafe}<span class="fmt19">\fi</span> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">flushright</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">spacing</span></span><span class="fmt20">}</span>{1} </pre>
+		<pre><span class="fmt19">\mbox</span>{}<span class="fmt19">\vfill</span> </pre>
+		<pre>{<span class="fmt19">\sffamily\itshape</span> </pre>
+		<pre>``If I <span class="fmt38">have</span> <span class="fmt38">seen</span> <span class="fmt38">farther</span> <span class="fmt38">than</span> <span class="fmt38">others</span>,<span class="fmt19">\\</span> </pre>
+		<pre>it is <span class="fmt38">because</span> I <span class="fmt38">stood</span> on <span class="fmt38">the</span> <span class="fmt38">shoulders</span> of <span class="fmt38">giants.</span>''<span class="fmt19">\\</span>} </pre>
+		<pre>--- <span class="fmt19">\textsc</span>{<span class="fmt38">Sir</span>~Isaac Newton} </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">spacing</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">flushright</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Resumo</span> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">abstract</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt19">\noindent</span> </pre>
+		<pre><span class="fmt19">\input</span>{Cap0/resumo} </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">abstract</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Abstract</span> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">englishabstract</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt19">\noindent</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\input</span>{Cap0/abstract} </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">englishabstract</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Lista</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">figuras</span> </pre>
+		<pre><span class="fmt19">\listoffigures</span> <span class="fmt18">%opcional</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Lista</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">tabelas</span> </pre>
+		<pre><span class="fmt19">\listoftables</span> <span class="fmt18">%opcional</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Lista</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">abreviaturas</span> </pre>
+		<pre><span class="fmt19">\listofabbreviations</span> </pre>
+		<pre><span class="fmt19">\input</span>{Cap0/listaabreviaturas} <span class="fmt18">%opcional</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Lista</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">simbolos</span> </pre>
+		<pre><span class="fmt19">\listofsymbols</span> </pre>
+		<pre><span class="fmt19">\input</span>{Cap0/listasimbolos} <span class="fmt18">%opcional</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Sumario</span> </pre>
+		<pre><span class="fmt19">\tableofcontents</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt19"><span class="fmt47">\mainmatter</span></span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Os</span><span class="fmt18"> </span><span class="fmt18">capitulos</span><span class="fmt18"> </span><span class="fmt18">comecam</span><span class="fmt18"> </span><span class="fmt18">aqui</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\chapter</span>{<span class="fmt57">Introdução</span>} </pre>
+		<pre><span class="fmt19">\input</span>{Cap1/cap1} </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\chapter</span>{<span class="fmt57">Modelagem</span><span class="fmt57"> </span><span class="fmt57">Dinâmica</span><span class="fmt57"> </span><span class="fmt57">de</span><span class="fmt57"> </span><span class="fmt57">Cupins</span><span class="fmt57"> </span><span class="fmt57">Cibernéticos</span>} </pre>
+		<pre><span class="fmt19">\input</span>{Cap2/cap2} </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\chapter</span>{<span class="fmt57">Controle</span><span class="fmt57"> </span><span class="fmt57">Robusto</span><span class="fmt57"> </span><span class="fmt57">de</span><span class="fmt57"> </span><span class="fmt57">Concretos</span><span class="fmt57"> </span><span class="fmt57">Caóticos</span>} </pre>
+		<pre><span class="fmt19">\input</span>{Cap3/cap3} </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\chapter</span>{<span class="fmt57">Conclusão</span>} </pre>
+		<pre><span class="fmt19">\input</span>{Cap4/cap4} </pre>
+		<pre> </pre>
+		<pre><span class="fmt17">%</span><span class="fmt17"> </span><span class="fmt17">REFERENCIAS</span><span class="fmt17"> </span><span class="fmt17">BIBLIOGRAFICAS</span> </pre>
+		<pre><span class="fmt19">\renewcommand\bibname</span>{<span class="fmt19">\itareferencesnamebabel</span>} <span class="fmt18">%renomear</span><span class="fmt18"> </span><span class="fmt18">título</span><span class="fmt18"> </span><span class="fmt18">do</span><span class="fmt18"> </span><span class="fmt18">capítulo</span><span class="fmt18"> </span><span class="fmt18">referências</span> </pre>
+		<pre><span class="fmt19">\bibliography</span>{Referencias/referencias} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Apendices</span> </pre>
+		<pre><span class="fmt19">\appendix</span> </pre>
+		<pre><span class="fmt20">\chapter</span>{<span class="fmt57">Tópicos</span><span class="fmt57"> </span><span class="fmt57">de</span><span class="fmt57"> </span><span class="fmt57">Dilema</span><span class="fmt57"> </span><span class="fmt57">Linear</span>} <span class="fmt18">%opcional</span> </pre>
+		<pre><span class="fmt19">\input</span>{ApeA/apendiceA} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Anexos</span> </pre>
+		<pre><span class="fmt19">\annex</span> </pre>
+		<pre><span class="fmt20">\chapter</span>{<span class="fmt57">Exemplo</span><span class="fmt57"> </span><span class="fmt57">de</span><span class="fmt57"> </span><span class="fmt57">um</span><span class="fmt57"> </span><span class="fmt57">Primeiro</span><span class="fmt57"> </span><span class="fmt57">Anexo</span>} <span class="fmt18">%opcional</span> </pre>
+		<pre><span class="fmt19">\input</span>{AneA/anexoA} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Glossario</span> </pre>
+		<pre><span class="fmt18">%\itaglossary</span> </pre>
+		<pre><span class="fmt18">%\printglossary</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Folha</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Registro</span><span class="fmt18"> </span><span class="fmt18">do</span><span class="fmt18"> </span><span class="fmt18">Documento</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Valores</span><span class="fmt18"> </span><span class="fmt18">dos</span><span class="fmt18"> </span><span class="fmt18">campos</span><span class="fmt18"> </span><span class="fmt18">do</span><span class="fmt18"> </span><span class="fmt18">formulario</span> </pre>
+		<pre><span class="fmt19">\FRDitadata</span>{25 de março de 2015} </pre>
+		<pre><span class="fmt19">\FRDitadocnro</span>{DCTA/ITA/DM-018/2015} <span class="fmt18">%(o</span><span class="fmt18"> </span><span class="fmt18">número</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">registro</span><span class="fmt18"> </span><span class="fmt18">você</span><span class="fmt18"> </span><span class="fmt18">solicita</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">biblioteca)</span> </pre>
+		<pre><span class="fmt19">\FRDitaorgaointerno</span>{Instituto Tecnológico de Aeronáutica -- ITA} </pre>
+		<pre><span class="fmt18">%Exemplo</span><span class="fmt18"> </span><span class="fmt18">no</span><span class="fmt18"> </span><span class="fmt18">caso</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">pós-graduação:</span><span class="fmt18"> </span><span class="fmt18">Instituto</span><span class="fmt18"> </span><span class="fmt18">Tecnol{\'o}gico</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Aeron{\'a}utica</span><span class="fmt18"> </span><span class="fmt18">--</span><span class="fmt18"> </span><span class="fmt18">ITA</span> </pre>
+		<pre><span class="fmt19">\FRDitapalavrasautor</span>{Cupim; Cimento; Estruturas} </pre>
+		<pre><span class="fmt19">\FRDitapalavrasresult</span>{Cupim; Dilema; Construção} </pre>
+		<pre><span class="fmt18">%Exemplo</span><span class="fmt18"> </span><span class="fmt18">no</span><span class="fmt18"> </span><span class="fmt18">caso</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">graduação</span><span class="fmt18"> </span><span class="fmt18">(TG):</span> </pre>
+		<pre><span class="fmt18">%\FRDitapalavraapresentacao{Trabalho</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">Graduação,</span><span class="fmt18"> </span><span class="fmt18">ITA,</span><span class="fmt18"> </span><span class="fmt18">São</span><span class="fmt18"> </span><span class="fmt18">José</span><span class="fmt18"> </span><span class="fmt18">dos</span><span class="fmt18"> </span><span class="fmt18">Campos,</span><span class="fmt18"> </span><span class="fmt18">2015.</span><span class="fmt18"> </span><span class="fmt18">\NumPenultimaPagina\</span><span class="fmt18"> </span><span class="fmt18">páginas.}</span> </pre>
+		<pre><span class="fmt18">%Exemplo</span><span class="fmt18"> </span><span class="fmt18">no</span><span class="fmt18"> </span><span class="fmt18">caso</span><span class="fmt18"> </span><span class="fmt18">de</span><span class="fmt18"> </span><span class="fmt18">pós-graduação</span><span class="fmt18"> </span><span class="fmt18">(msc,</span><span class="fmt18"> </span><span class="fmt18">dsc):</span> </pre>
+		<pre><span class="fmt19">\FRDitapalavraapresentacao</span>{ITA, São José dos Campos. Curso de Mestrado. Programa de Pós-Graduação em Engenharia Aeronáutica e Mecânica. Área de Sistemas Aeroespaciais e Mecatrônica. Orientador: Prof.~Dr. Adalberto Santos Dupont. Coorientadora: Prof<span class="fmt35">$</span><span class="fmt34">^</span><span class="fmt21">\textnormal</span><span class="fmt34">{a}</span><span class="fmt35">$</span>.~Dr<span class="fmt35">$</span><span class="fmt34">^</span><span class="fmt21">\textnormal</span><span class="fmt34">{a}</span><span class="fmt35">$</span>. Doralice Serra. Defesa em 05/03/2015. Publicada em 25/03/2015.} </pre>
+		<pre><span class="fmt19">\FRDitaresumo</span>{<span class="fmt19">\input</span>{Cap0/resumo}} </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">  </span><span class="fmt18">Primeiro</span><span class="fmt18"> </span><span class="fmt18">Parametro:</span><span class="fmt18"> </span><span class="fmt18">Nacional</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">Internacional</span><span class="fmt18"> </span><span class="fmt18">--</span><span class="fmt18"> </span><span class="fmt18">N/I</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18">  </span><span class="fmt18">Segundo</span><span class="fmt18"> </span><span class="fmt18">parametro:</span><span class="fmt18"> </span><span class="fmt18">Ostensivo,</span><span class="fmt18"> </span><span class="fmt18">Reservado,</span><span class="fmt18"> </span><span class="fmt18">Confidencial</span><span class="fmt18"> </span><span class="fmt18">ou</span><span class="fmt18"> </span><span class="fmt18">Secreto</span><span class="fmt18"> </span><span class="fmt18">--</span><span class="fmt18"> </span><span class="fmt18">O/R/C/S</span> </pre>
+		<pre><span class="fmt19">\FRDitaOpcoes</span>{N}{O} </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Cria</span><span class="fmt18"> </span><span class="fmt18">o</span><span class="fmt18"> </span><span class="fmt18">formulario</span> </pre>
+		<pre><span class="fmt19">\itaFRD</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Fim</span><span class="fmt18"> </span><span class="fmt18">do</span><span class="fmt18"> </span><span class="fmt18">Documento.</span><span class="fmt18"> </span><span class="fmt18">O</span><span class="fmt18"> </span><span class="fmt18">massacre</span><span class="fmt18"> </span><span class="fmt18">acabou!!!</span><span class="fmt18"> </span><span class="fmt18">:-)</span> </pre></body></html>
